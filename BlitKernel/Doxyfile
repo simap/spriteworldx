@@ -1,0 +1,17 @@
+# Doxyfile 1.4.2
+
+PROJECT_NAME           = BlitKernel
+OUTPUT_LANGUAGE        = English
+TAB_SIZE               = 4
+INPUT                  = BlitKernel.h
+
+BRIEF_MEMBER_DESC      = YES
+JAVADOC_AUTOBRIEF      = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+
+REPEAT_BRIEF           = NO
+SOURCE_BROWSER         = NO
+VERBATIM_HEADERS       = NO
+SHOW_USED_FILES        = NO
+

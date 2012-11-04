@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47378390850B6C90078BF9E /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43E2490057F361C00000102 /* SDL.framework */; };
+		A48D403F0AC08C7B008A7503 /* SWCompression.c in Sources */ = {isa = PBXBuildFile; fileRef = A48D40390AC08C7B008A7503 /* SWCompression.c */; };
+		A48D40400AC08C7B008A7503 /* SWCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = A48D403A0AC08C7B008A7503 /* SWCompression.h */; };
+		A48D40410AC08C7B008A7503 /* SWProperties.c in Sources */ = {isa = PBXBuildFile; fileRef = A48D403B0AC08C7B008A7503 /* SWProperties.c */; };
+		A48D40420AC08C7B008A7503 /* SWProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = A48D403C0AC08C7B008A7503 /* SWProperties.h */; };
+		A48D40430AC08C7B008A7503 /* SWSounds.c in Sources */ = {isa = PBXBuildFile; fileRef = A48D403D0AC08C7B008A7503 /* SWSounds.c */; };
+		A48D40440AC08C7B008A7503 /* SWSounds.h in Headers */ = {isa = PBXBuildFile; fileRef = A48D403E0AC08C7B008A7503 /* SWSounds.h */; };
+		A49159EF083B7B5700A4399E /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49159EE083B7B5700A4399E /* SDL_image.framework */; };
+		A4979480083A1BE800C75AF2 /* Scrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E249A057F369400000102 /* Scrolling.h */; };
+		A4979482083A1BE800C75AF2 /* Sprite.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BA057F369400000102 /* Sprite.h */; };
+		A4979483083A1BE800C75AF2 /* SpriteCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BB057F369400000102 /* SpriteCreation.h */; };
+		A4979484083A1BE800C75AF2 /* SpriteFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BC057F369400000102 /* SpriteFrame.h */; };
+		A4979485083A1BE800C75AF2 /* SpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BD057F369400000102 /* SpriteLayer.h */; };
+		A4979486083A1BE800C75AF2 /* SpriteWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BE057F369400000102 /* SpriteWorld.h */; };
+		A4979487083A1BE800C75AF2 /* SpriteWorldUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24BF057F369400000102 /* SpriteWorldUtils.h */; };
+		A4979488083A1BE800C75AF2 /* SWCommonHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24C0057F369400000102 /* SWCommonHeaders.h */; };
+		A4979489083A1BE800C75AF2 /* SWIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24C1057F369400000102 /* SWIncludes.h */; };
+		A497948A083A1BE800C75AF2 /* Tiling.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E24C2057F369400000102 /* Tiling.h */; };
+		A497948C083A1BE800C75AF2 /* Scrolling.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000001880AE0 /* Scrolling.c */; };
+		A497948D083A1BE800C75AF2 /* Sprite.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000001A458F0 /* Sprite.c */; };
+		A497948E083A1BE800C75AF2 /* SpriteCreation.c in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000018809F0 /* SpriteCreation.c */; };
+		A497948F083A1BE800C75AF2 /* SpriteFrame.c in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000019163C0 /* SpriteFrame.c */; };
+		A4979490083A1BE800C75AF2 /* SpriteLayer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000001DBF40 /* SpriteLayer.c */; };
+		A4979491083A1BE800C75AF2 /* SpriteWorld.c in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000001A0B20 /* SpriteWorld.c */; };
+		A4979492083A1BE800C75AF2 /* SpriteWorldUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000001A321E0 /* SpriteWorldUtils.c */; };
+		A4979493083A1BE800C75AF2 /* Tiling.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000001916150 /* Tiling.c */; };
+		A4979534083A1C9800C75AF2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4979533083A1C9800C75AF2 /* OpenGL.framework */; };
+		A4C1141608431D3F007F5FF9 /* SWParticles.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000000000001A4BAD0 /* SWParticles.h */; };
+		A4C1141708431D3F007F5FF9 /* SWStats.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000000000000018EE1B0 /* SWStats.h */; };
+		A4C1141808431D46007F5FF9 /* SWParticles.c in Sources */ = {isa = PBXBuildFile; fileRef = A4C112EC08430816007F5FF9 /* SWParticles.c */; };
+		A4C1141908431D46007F5FF9 /* SWStats.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000001A31F10 /* SWStats.c */; };
+		A4C1147208448E1A007F5FF9 /* BlitKernelGL.c in Sources */ = {isa = PBXBuildFile; fileRef = A4C1146F08448E1A007F5FF9 /* BlitKernelGL.c */; };
+		A4C1147308448E1A007F5FF9 /* BlitKernelSDL.c in Sources */ = {isa = PBXBuildFile; fileRef = A4C1147008448E1A007F5FF9 /* BlitKernelSDL.c */; };
+		A4C1147708448E31007F5FF9 /* SWUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C1147608448E31007F5FF9 /* SWUtils.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0000000000000000001A0B20 /* SpriteWorld.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SpriteWorld.c; sourceTree = "<group>"; };
+		0000000000000000001DBF40 /* SpriteLayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SpriteLayer.c; sourceTree = "<group>"; };
+		0000000000000000018809F0 /* SpriteCreation.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SpriteCreation.c; sourceTree = "<group>"; };
+		000000000000000001880AE0 /* Scrolling.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Scrolling.c; sourceTree = "<group>"; };
+		0000000000000000018EE1B0 /* SWStats.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWStats.h; sourceTree = "<group>"; };
+		000000000000000001916150 /* Tiling.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Tiling.c; sourceTree = "<group>"; };
+		0000000000000000019163C0 /* SpriteFrame.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SpriteFrame.c; sourceTree = "<group>"; };
+		000000000000000001A31F10 /* SWStats.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SWStats.c; sourceTree = "<group>"; };
+		000000000000000001A321E0 /* SpriteWorldUtils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SpriteWorldUtils.c; sourceTree = "<group>"; };
+		000000000000000001A458F0 /* Sprite.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Sprite.c; sourceTree = "<group>"; };
+		000000000000000001A4BAD0 /* SWParticles.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWParticles.h; sourceTree = "<group>"; };
+		A439D898084F264C007782C9 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = ../README; sourceTree = SOURCE_ROOT; };
+		A439D89D084F265E007782C9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = SOURCE_ROOT; };
+		A43E2490057F361C00000102 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		A43E249A057F369400000102 /* Scrolling.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = Scrolling.h; sourceTree = "<group>"; };
+		A43E24BA057F369400000102 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		A43E24BB057F369400000102 /* SpriteCreation.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SpriteCreation.h; sourceTree = "<group>"; };
+		A43E24BC057F369400000102 /* SpriteFrame.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SpriteFrame.h; sourceTree = "<group>"; };
+		A43E24BD057F369400000102 /* SpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SpriteLayer.h; sourceTree = "<group>"; };
+		A43E24BE057F369400000102 /* SpriteWorld.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SpriteWorld.h; sourceTree = "<group>"; };
+		A43E24BF057F369400000102 /* SpriteWorldUtils.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SpriteWorldUtils.h; sourceTree = "<group>"; };
+		A43E24C0057F369400000102 /* SWCommonHeaders.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SWCommonHeaders.h; sourceTree = "<group>"; };
+		A43E24C1057F369400000102 /* SWIncludes.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = SWIncludes.h; sourceTree = "<group>"; };
+		A43E24C2057F369400000102 /* Tiling.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = Tiling.h; sourceTree = "<group>"; };
+		A48D40390AC08C7B008A7503 /* SWCompression.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SWCompression.c; sourceTree = "<group>"; };
+		A48D403A0AC08C7B008A7503 /* SWCompression.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWCompression.h; sourceTree = "<group>"; };
+		A48D403B0AC08C7B008A7503 /* SWProperties.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SWProperties.c; sourceTree = "<group>"; };
+		A48D403C0AC08C7B008A7503 /* SWProperties.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWProperties.h; sourceTree = "<group>"; };
+		A48D403D0AC08C7B008A7503 /* SWSounds.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SWSounds.c; sourceTree = "<group>"; };
+		A48D403E0AC08C7B008A7503 /* SWSounds.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWSounds.h; sourceTree = "<group>"; };
+		A49159EE083B7B5700A4399E /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
+		A4979498083A1BE800C75AF2 /* libSpriteWorldX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpriteWorldX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4979533083A1C9800C75AF2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		A4C112EC08430816007F5FF9 /* SWParticles.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = SWParticles.c; sourceTree = "<group>"; };
+		A4C1146E08448E1A007F5FF9 /* BlitKernel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BlitKernel.h; sourceTree = "<group>"; };
+		A4C1146F08448E1A007F5FF9 /* BlitKernelGL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = BlitKernelGL.c; sourceTree = "<group>"; };
+		A4C1147008448E1A007F5FF9 /* BlitKernelSDL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = BlitKernelSDL.c; sourceTree = "<group>"; };
+		A4C1147608448E31007F5FF9 /* SWUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SWUtils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4979496083A1BE800C75AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47378390850B6C90078BF9E /* SDL.framework in Frameworks */,
+				A4979534083A1C9800C75AF2 /* OpenGL.framework in Frameworks */,
+				A49159EF083B7B5700A4399E /* SDL_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000001878120 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1147608448E31007F5FF9 /* SWUtils.h */,
+				A4C112EC08430816007F5FF9 /* SWParticles.c */,
+				000000000000000001A4BAD0 /* SWParticles.h */,
+				000000000000000001A31F10 /* SWStats.c */,
+				0000000000000000018EE1B0 /* SWStats.h */,
+				A48D40390AC08C7B008A7503 /* SWCompression.c */,
+				A48D403A0AC08C7B008A7503 /* SWCompression.h */,
+				A48D403B0AC08C7B008A7503 /* SWProperties.c */,
+				A48D403C0AC08C7B008A7503 /* SWProperties.h */,
+				A48D403D0AC08C7B008A7503 /* SWSounds.c */,
+				A48D403E0AC08C7B008A7503 /* SWSounds.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0000000000000000018EBEA0 = {
+			isa = PBXGroup;
+			children = (
+				A439D898084F264C007782C9 /* README */,
+				A439D89D084F265E007782C9 /* LICENSE */,
+				000000000000000001A3DF90 /* SpriteWorldX */,
+				A43E248C057F35DB00000102 /* Frameworks */,
+				000000000000000001A48BB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000001A3DF90 /* SpriteWorldX */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1146A08448DA6007F5FF9 /* BlitKernel */,
+				000000000000000001A47250 /* Sources */,
+				A43E2499057F369400000102 /* Headers */,
+				000000000000000001878120 /* Utils */,
+			);
+			name = SpriteWorldX;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		000000000000000001A47250 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000001A458F0 /* Sprite.c */,
+				0000000000000000018809F0 /* SpriteCreation.c */,
+				0000000000000000019163C0 /* SpriteFrame.c */,
+				0000000000000000001DBF40 /* SpriteLayer.c */,
+				0000000000000000001A0B20 /* SpriteWorld.c */,
+				000000000000000001A321E0 /* SpriteWorldUtils.c */,
+				000000000000000001880AE0 /* Scrolling.c */,
+				000000000000000001916150 /* Tiling.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		000000000000000001A48BB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4979498083A1BE800C75AF2 /* libSpriteWorldX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A43E248C057F35DB00000102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A43E2490057F361C00000102 /* SDL.framework */,
+				A4979533083A1C9800C75AF2 /* OpenGL.framework */,
+				A49159EE083B7B5700A4399E /* SDL_image.framework */,
+			);
+			name = Frameworks;
+			path = /Library/Frameworks;
+			sourceTree = "<absolute>";
+		};
+		A43E2499057F369400000102 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A43E24C0057F369400000102 /* SWCommonHeaders.h */,
+				A43E24C1057F369400000102 /* SWIncludes.h */,
+				A43E24BA057F369400000102 /* Sprite.h */,
+				A43E24BB057F369400000102 /* SpriteCreation.h */,
+				A43E24BC057F369400000102 /* SpriteFrame.h */,
+				A43E24BD057F369400000102 /* SpriteLayer.h */,
+				A43E24BE057F369400000102 /* SpriteWorld.h */,
+				A43E24BF057F369400000102 /* SpriteWorldUtils.h */,
+				A43E249A057F369400000102 /* Scrolling.h */,
+				A43E24C2057F369400000102 /* Tiling.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A4C1146A08448DA6007F5FF9 /* BlitKernel */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1146E08448E1A007F5FF9 /* BlitKernel.h */,
+				A4C1147008448E1A007F5FF9 /* BlitKernelSDL.c */,
+				A4C1146F08448E1A007F5FF9 /* BlitKernelGL.c */,
+			);
+			path = BlitKernel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A497947F083A1BE800C75AF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4979488083A1BE800C75AF2 /* SWCommonHeaders.h in Headers */,
+				A4979489083A1BE800C75AF2 /* SWIncludes.h in Headers */,
+				A4979482083A1BE800C75AF2 /* Sprite.h in Headers */,
+				A4979483083A1BE800C75AF2 /* SpriteCreation.h in Headers */,
+				A4979484083A1BE800C75AF2 /* SpriteFrame.h in Headers */,
+				A4979485083A1BE800C75AF2 /* SpriteLayer.h in Headers */,
+				A4979486083A1BE800C75AF2 /* SpriteWorld.h in Headers */,
+				A4979487083A1BE800C75AF2 /* SpriteWorldUtils.h in Headers */,
+				A4979480083A1BE800C75AF2 /* Scrolling.h in Headers */,
+				A497948A083A1BE800C75AF2 /* Tiling.h in Headers */,
+				A4C1147708448E31007F5FF9 /* SWUtils.h in Headers */,
+				A4C1141608431D3F007F5FF9 /* SWParticles.h in Headers */,
+				A4C1141708431D3F007F5FF9 /* SWStats.h in Headers */,
+				A48D40400AC08C7B008A7503 /* SWCompression.h in Headers */,
+				A48D40420AC08C7B008A7503 /* SWProperties.h in Headers */,
+				A48D40440AC08C7B008A7503 /* SWSounds.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A497947E083A1BE800C75AF2 /* libSpriteWorldX.a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41F05E30AB401EA00C44E2D /* Build configuration list for PBXNativeTarget "libSpriteWorldX.a" */;
+			buildPhases = (
+				A497947F083A1BE800C75AF2 /* Headers */,
+				A497948B083A1BE800C75AF2 /* Sources */,
+				A4979496083A1BE800C75AF2 /* Frameworks */,
+				A4979497083A1BE800C75AF2 /* Rez */,
+				A4979548083A1D7E00C75AF2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSpriteWorldX.a;
+			productInstallPath = /usr/local/lib;
+			productName = libspriteworldx.a;
+			productReference = A4979498083A1BE800C75AF2 /* libSpriteWorldX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0000000000000000018ED510 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A41F05E70AB401EA00C44E2D /* Build configuration list for PBXProject "SpriteWorldX" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 0000000000000000018EBEA0;
+			projectDirPath = "";
+			targets = (
+				A497947E083A1BE800C75AF2 /* libSpriteWorldX.a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		A4979497083A1BE800C75AF2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4979548083A1D7E00C75AF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$ACTION\" = \"build\" ]; then\n  install -m 0644 \"$BUILT_PRODUCTS_DIR/$TARGET_NAME\" \"$SRCROOT/../Libraries\"\n  ranlib \"$SRCROOT/../Libraries/$TARGET_NAME\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A497948B083A1BE800C75AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A497948D083A1BE800C75AF2 /* Sprite.c in Sources */,
+				A497948E083A1BE800C75AF2 /* SpriteCreation.c in Sources */,
+				A497948F083A1BE800C75AF2 /* SpriteFrame.c in Sources */,
+				A4979490083A1BE800C75AF2 /* SpriteLayer.c in Sources */,
+				A4979491083A1BE800C75AF2 /* SpriteWorld.c in Sources */,
+				A4979492083A1BE800C75AF2 /* SpriteWorldUtils.c in Sources */,
+				A497948C083A1BE800C75AF2 /* Scrolling.c in Sources */,
+				A4979493083A1BE800C75AF2 /* Tiling.c in Sources */,
+				A4C1141808431D46007F5FF9 /* SWParticles.c in Sources */,
+				A4C1141908431D46007F5FF9 /* SWStats.c in Sources */,
+				A4C1147308448E1A007F5FF9 /* BlitKernelSDL.c in Sources */,
+				A4C1147208448E1A007F5FF9 /* BlitKernelGL.c in Sources */,
+				A48D403F0AC08C7B008A7503 /* SWCompression.c in Sources */,
+				A48D40410AC08C7B008A7503 /* SWProperties.c in Sources */,
+				A48D40430AC08C7B008A7503 /* SWSounds.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A41F05E40AB401EA00C44E2D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_OPENGL,
+					HAVE_SDL_IMAGE,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL,
+					../Headers,
+					../Utils,
+					../BlitKernel,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpriteWorldX;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = "";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		A41F05E50AB401EA00C44E2D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_OPENGL,
+					HAVE_SDL_IMAGE,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL,
+					../Headers,
+					../Utils,
+					../BlitKernel,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpriteWorldX;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = "";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		A41F05E60AB401EA00C44E2D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_OPENGL,
+					HAVE_SDL_IMAGE,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL,
+					../Headers,
+					../Utils,
+					../BlitKernel,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.1;
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SpriteWorldX;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = "";
+			};
+			name = Default;
+		};
+		A41F05E80AB401EA00C44E2D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		A41F05E90AB401EA00C44E2D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		A41F05EA0AB401EA00C44E2D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A41F05E30AB401EA00C44E2D /* Build configuration list for PBXNativeTarget "libSpriteWorldX.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41F05E40AB401EA00C44E2D /* Development */,
+				A41F05E50AB401EA00C44E2D /* Deployment */,
+				A41F05E60AB401EA00C44E2D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		A41F05E70AB401EA00C44E2D /* Build configuration list for PBXProject "SpriteWorldX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41F05E80AB401EA00C44E2D /* Development */,
+				A41F05E90AB401EA00C44E2D /* Deployment */,
+				A41F05EA0AB401EA00C44E2D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0000000000000000018ED510 /* Project object */;
+}

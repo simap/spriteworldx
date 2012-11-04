@@ -1,0 +1,40 @@
+# Doxyfile 1.4.5
+
+# This file describes the settings to be used by the documentation system
+# doxygen (www.doxygen.org) for a project
+#
+# All text after a hash (#) is considered a comment and will be ignored
+
+PROJECT_NAME           = "SpriteWorld X"
+PROJECT_NUMBER         = "0.6 beta"
+OUTPUT_LANGUAGE        = English
+JAVADOC_AUTOBRIEF      = YES
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = NO
+
+EXTRACT_ALL            = YES
+SHOW_USED_FILES        = NO
+INPUT                  = Sources Headers Utils
+FILE_PATTERNS          = *.h *.hpp
+IMAGE_PATH             = Documentation
+
+ENABLE_PREPROCESSING   = YES
+PREDEFINED             = __cplusplus
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = YES
+
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+SOURCE_BROWSER         = NO
+VERBATIM_HEADERS       = NO
+
+GENERATE_HTML          = YES
+GENERATE_XML           = NO
+GENERATE_LATEX         = YES
+GENERATE_RTF           = NO
+
+GENERATE_HTMLHELP      = YES
+COMPACT_LATEX          = YES
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+

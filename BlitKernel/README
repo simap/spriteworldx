@@ -1,0 +1,99 @@
+BlitKernel
+==========
+
+helper library ,for extending and integrating SDL and OpenGL ("GL")
+
+
+FEATURES
+--------
+
+SDL helper routines:
+
+- flexible SDL image loader
+- color key, alpha channel
+- pixel collision detection
+
+- putpixel, getpixel
+- drawline, drawoval
+
+GL helper routines:
+
+- weak (dynamic) linking
+- getting GL capabilities
+- uploading surfaces to GL
+
+
+LICENSE
+-------
+
+Copyright (C) 2005 Anders F Bjoerklund <afb@users.sourceforge.net>
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any
+damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any
+purpose, including commercial applications, and to alter it and
+redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must
+   not claim that you wrote the original software. If you use this
+   software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source
+   distribution.
+
+
+GETTING GL POINTERS
+-------------------
+
+All OpenGL routines are called through function pointers, which
+makes it possible to run the application on platforms without GL.
+
+The current OpenGL version and the hardware capabilities are also
+cached for easy access later by the application as simple booleans.
+
+DRAWING "GL SURFACES"
+---------------------
+
+SDL surfaces are converted to an OpenGL-compatible format, and
+uploaded to a GL texture which can later be drawn very quickly.
+
+Basic drawing idea, before any optimizations or extra features:
+
+    GLuint      texture;
+    SDL_Color   *color;
+    SDL_Rect    *rect;
+
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_BLEND);
+
+    glEnable(GL_TEXTURE_2D);
+
+    glBindTexture(GL_TEXTURE_2D, texture); 
+    glBegin(GL_QUADS);
+        glColor4ub(color->r, color->g, color->b, SDL_ALPHA_OPAQUE);
+        glVertex2d(rect->x, rect->y);
+        glTexCoord2f(0.0f, 0.0f);
+        glVertex2d(rect->x + rect->w, rect->y);
+        glTexCoord2f(1.0f, 0.0f);
+        glVertex2d(rect->x + rect->w, rect->y + rect->h);
+        glTexCoord2f(1.0f, 1.0f);
+        glVertex2d(rect->x, rect->y + rect->h);
+        glTexCoord2f(0.0f, 1.0f);
+    glEnd();
+
+    glDisable(GL_TEXTURE_2D);
+
+    glDisable(GL_BLEND);
+
+
+The actual code is complicated somewhat by GL surface format
+requirements, and by any possible power-of-two requirements.
+
+It's also possible that the surface is too big to fit into a
+single texture, and thus requires using several textures/quads.
